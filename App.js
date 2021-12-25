@@ -7,7 +7,7 @@ app.set('view engine', 'ejs');//défini ejs comme outil pour utiliser les views
 app.use('/public', express.static('public'));
 dotenv.config()
 app.get('/', (req, res)=>{
-    res.render('index', {pageTitle: "Avipole-home"});
+    res.render('index.ejs', {pageTitle: "Avipole-home"});
 });
 
 app.get('/services', (req, res)=>{
