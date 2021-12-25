@@ -1,0 +1,10 @@
+body{
+    background-color: rgb(171, 90, 32);
+    color: white;
+}
+
+#home_tilte{
+    font-weight: bold;
+    font-size:45px;
+    margin: bottom 100px;
+}
