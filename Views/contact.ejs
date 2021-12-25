@@ -10,7 +10,7 @@
   </head>
   <style>
     #home_tilte{
-      font-size: 145px;
+      font-size: 45px;
       font-weight: bold;
       margin-top: 100px;
       font-style: italic;
@@ -25,13 +25,46 @@
     <div class="container-fluid">
         <div class="row ">
             <div class="col-12 ">
-              <h1 class="" id="home_tilte">Page A Propos En Construction</h1>
+              <h1 class="" id="home_tilte">Page Contact En Construction</h1>
             </div>
-            <div class="col-12">
-            <p>La page Contact esten construction</p>
+        </div>
+        <div class="row">
+            <div class="col-1"></div>
+            <div class="col-6">
+                <form>
+                <h1>Contacter Nous</h1>
+                  <div class="mb-3">
+                    <label for="exampleInputPassword1" class="form-label">Nom</label>
+                    <input type="password" class="form-control" id="exampleInputPassword1">
+                  </div>
+                  <div class="mb-3">
+                    <label for="exampleInputPassword1" class="form-label">Prenom</label>
+                    <input type="password" class="form-control" id="exampleInputPassword1">
+                  </div>
+                    <div class="mb-3">
+                      <label for="exampleInputEmail1" class="form-label">Email address</label>
+                      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleFormControlTextarea1" class="form-label">Message</label>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="10" placeholder="Enter your message"></textarea>
+                      </div>
+                    <button type="submit" class="btn btn-light">Envoyez</button>
+                  </form>
+            </div>
+            <div class="col-2"></div>
+            <div class="col-3">
+                <address>
+                    La partie de l'address
+                </address>
             </div>
         </div>
     </div>
+    <div class="container-fluid mt-5" style="border-top: 10px solid #fff">
+        <div class="" style="color: 'black'">
+          <%- include('./Partials/footer.ejs') %>
+        </div>
+      </div>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
