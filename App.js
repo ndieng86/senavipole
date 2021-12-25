@@ -1,10 +1,11 @@
 import express from  'express';// utilise express
+import dotenv from "dotenv";
 const app = express(); //crée une instance de express dans app
 
 app.set('views', './views'); //defini le dossier pour les views
 app.set('view engine', 'ejs');//défini ejs comme outil pour utiliser les views
 app.use('/public', express.static('public'));
-
+dotenv.config()
 app.get('/', (req, res)=>{
     res.render('index', {pageTitle: "Avipole-home"});
 });
@@ -25,7 +26,7 @@ app.get('/contact', (req, res)=>{
 });
 
 
-const PORT= 3020;
+const PORT= process.env.PORT || 5000;
 app.listen(PORT, ()=>{ //le serveur attend les requetes sur le port 3000
-    console.log ("j'écoute le port 3020!");
+    console.log (` j'ecoute le port ${PORT}`);
 });
